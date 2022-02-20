@@ -1,6 +1,6 @@
 {
   "name": "mutator-factory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple reducer function to transform the input data with the provided functions",
   "main": "lib/index.js",
   "module": "lib/index.js",
