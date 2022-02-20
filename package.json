@@ -16,9 +16,12 @@
     "type": "git",
     "url": "git+https://github.com/alfupe/mutator-factory.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "helper",
+    "transformer"
+  ],
+  "author": "Alex Fuentes",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/alfupe/mutator-factory/issues"
   },
