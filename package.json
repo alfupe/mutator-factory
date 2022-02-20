@@ -1,0 +1,30 @@
+{
+  "name": "mutator-factory",
+  "version": "0.0.1",
+  "description": "Simple reducer function to transform the input data with the provided functions",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "ts-types": "tsc --emitDeclarationOnly --outDir lib",
+    "build": "rimraf lib && node ./esbuild.js && npm run ts-types",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfupe/mutator-factory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfupe/mutator-factory/issues"
+  },
+  "homepage": "https://github.com/alfupe/mutator-factory#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.23",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  }
+}
