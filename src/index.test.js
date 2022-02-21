@@ -27,7 +27,7 @@ test('should transform and array of data piping the mutators', () => {
   expect(received).toMatchInlineSnapshot(`
     Array [
       Object {
-        "age": "7",
+        "age": "6",
         "name": "Foo",
         "surname": "ooF",
       },
