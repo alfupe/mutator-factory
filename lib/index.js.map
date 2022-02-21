@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../src/index.ts"],
-  "sourcesContent": ["type FactoryOptions = {\n  direction?: string;\n};\n\ntype Data = object[] | object;\n\nexport function mutatorFactory(\n  data: Data,\n  mutators: any[] = [],\n  options: FactoryOptions = { direction: 'ltr' },\n) {\n  const reducerFunction =\n    options?.direction === 'rtl' ? 'reduceRight' : 'reduce';\n\n  return mutators[reducerFunction]((accumulator, mutator): Data => {\n    return Array.isArray(data)\n      ? accumulator.map(mutator)\n      : mutator(accumulator);\n  }, data);\n}\n"],
-  "mappings": "AAMO,WACL,EACA,EAAkB,GAClB,EAA0B,CAAE,UAAW,OACvC,CACA,GAAM,GACJ,GAAS,YAAc,MAAQ,cAAgB,SAEjD,MAAO,GAAS,GAAiB,CAAC,EAAa,IACtC,MAAM,QAAQ,GACjB,EAAY,IAAI,GAChB,EAAQ,GACX",
-  "names": []
-}
